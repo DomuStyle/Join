@@ -14,16 +14,16 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom(
       provideFirebaseApp(() =>
         initializeApp({
-          projectId: 'joindb-4dd40',
-          appId: '1:550188192810:web:2df3a711daf5ca6bb95f53',
-          storageBucket: 'joindb-4dd40.firebasestorage.app',
-          apiKey: 'AIzaSyBj1vvXI8VUMvYCd_0PCtdVIZh70n4iYEA',
-          authDomain: 'joindb-4dd40.firebaseapp.com',
-          messagingSenderId: '550188192810',
+          apiKey: "AIzaSyBWGarBxqYiIzlFNKvpsoXmwhdgmgnWIfs",
+          authDomain: "join-9590c.firebaseapp.com",
+          projectId: "join-9590c",
+          storageBucket: "join-9590c.firebasestorage.app",
+          messagingSenderId: "754313259349",
+          appId: "1:754313259349:web:0057d616337c8d696467dc"
         })
       )
     ),
     importProvidersFrom(provideAuth(() => getAuth())),
-    importProvidersFrom(provideFirestore(() => getFirestore())),
+    importProvidersFrom(provideFirestore(() => getFirestore())), importProvidersFrom(provideFirebaseApp(() => initializeApp({"projectId":"join-9590c","appId":"1:754313259349:web:0057d616337c8d696467dc","storageBucket":"join-9590c.firebasestorage.app","apiKey":"AIzaSyBWGarBxqYiIzlFNKvpsoXmwhdgmgnWIfs","authDomain":"join-9590c.firebaseapp.com","messagingSenderId":"754313259349"}))), importProvidersFrom(provideAuth(() => getAuth())), importProvidersFrom(provideFirestore(() => getFirestore())),
   ],
 };
